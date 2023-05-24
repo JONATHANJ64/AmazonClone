@@ -1,0 +1,38 @@
+.orders {
+  padding: 40px;
+  margin: 20px 0;
+  border: 1px solid lightgray;
+  background-color: white;
+  position: relative;
+}
+
+.order__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.order__section {
+  margin-bottom: 20px;
+}
+
+.order__title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.order__address {
+  margin-top: 10px;
+}
+
+.order__address p {
+  margin: 5px 0;
+}
+
+.order__section:last-child .order__title {
+  color: green;
+}
+
+.order__section:last-child p {
+  color: green;
+  font-weight: bold;
+}

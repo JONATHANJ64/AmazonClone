@@ -1,0 +1,146 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.login__logo {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.login__container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 600px;
+}
+@media (max-width: 767px) {
+  /* Apply styles for screens with a maximum width of 767px (phone screens) */
+  .login__container {
+    width: 100%;
+    max-width: 400px; /* Adjust the maximum width as needed */
+  }
+}
+.login__container h1 {
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.email-input,
+.password-input {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.email-input input,
+.password-input input {
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  outline: none;
+  background-color: transparent;
+}
+
+.email-input .label-name,
+.password-input .label-name {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.email-input input:focus + .label-name,
+.email-input input:valid + .label-name,
+.password-input input:focus + .label-name,
+.password-input input:valid + .label-name {
+  top: -18px;
+  font-size: 12px;
+  color: #0073e6;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.login-error {
+  color: red;
+  margin-top: 10px;
+}
+
+.login__signInButton {
+  background-color: #f0c14b;
+  border: 1px solid;
+  border-color: #a88734 #9c7e31 #846a29;
+  color: #111;
+  cursor: pointer;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.login__signInButton:hover {
+  background-color: #ddb347;
+}
+
+p {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+.option {
+  margin-top: 20px;
+}
+
+.option p {
+  font-size: 14px;
+}
+
+.option a {
+  color: #0073e6;
+}
+
+.demo-button {
+  background-color: #f0c14b;
+  border: 1px solid;
+  border-color: #a88734 #9c7e31 #846a29;
+  color: #111;
+  cursor: pointer;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+.demo-button:hover {
+  background-color: #ddb347;
+}
